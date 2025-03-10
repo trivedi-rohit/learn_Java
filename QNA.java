@@ -680,7 +680,21 @@ System.out.println("Hello");
 } }
 */
 //================================================================================
-
+/*
+ * class staticControlFlow 
+ * { 
+ * static int a; static int b;
+ * 
+ * static { 
+ * System.out.println("Static Block"); 
+ * a=10; b=20; 
+ * 	} 
+ * } 
+ * public class
+ * QNA{ public static void main(String[]args) {
+ * System.out.println("Main Method"); } }
+ */
+//==================================================================================
 
 
 
