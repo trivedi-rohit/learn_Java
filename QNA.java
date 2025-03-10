@@ -680,13 +680,7 @@ System.out.println("Hello");
 } }
 */
 //================================================================================
-public class QNA{
-    public static void main(String[]args) {
-        int x=10;
-        if (false)
-            System.out.println(x);
-        System.out.println("Hello");
-    } }
+
 
 
 
