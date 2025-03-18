@@ -695,7 +695,103 @@ System.out.println("Hello");
  * System.out.println("Main Method"); } }
  */
 //==================================================================================
-
+/*
+//Consider below code of Counter.java file:
+public class Counter{
+	int count;
+	
+	private static void increment(Counter counter) {
+		counter.count++;
+		
+	}
+	public static void main(String[]args) {
+		Counter c1 = new Counter();
+		Counter c2=c1;
+		Counter c3 = null;
+		c2.count=1000;
+		increment(c2);
+		System.out.println(c2.count);
+	}
+} 
+//On executing Counter class, how many Counter objects are created in the memory?
+*/
+//==================================================================================
+/*
+// What will be the result of compiling & executing Test class?
+public class Test
+{
+public static void main(String[]args){
+	String res="";
+	
+	loop:for (int i=1;i<=5;i++)
+	{
+		switch(i){
+			case 1:
+				res += "UP ";
+				break;
+			case 2:
+				res += "TO ";
+				break;
+			case 3:
+				break;
+			case 4:
+				res += "DATE";
+				break loop;
+			}
+	}
+	System.out.println(String.join("-",res.split(" ")));
+}}
+*/
+//===========================================================================
+/*
+public class Test
+{
+	public static void main(String[]args){
+		String res ="";
+		String [] arr = {"Dog",null,"Friendly"};
+	for (String s:arr)
+	{
+		res += String.join("-",s);
+	}
+	System.out.println(res);
+	}}
+*/
+//=========================================================================
+/*
+public class Test{
+public static void main(String[]args){
+	String[][]chs=new String[2][];
+	chs[0]=new String[2];
+	chs[1]=new String[5];
+	int i=97;
+	for (int a=0;a<chs.length;a++)
+	{
+		for(int b=0;b<chs.length;b++){
+			chs[a][b]=" "+i;
+			i++;
+		}
+	}
+	for (String[] ca:chs)
+	{
+		for (String c:ca)
+		{
+			System.out.print(c+" ");
+		}
+		System.out.println();
+	}
+}}
+*/
+//===========================================================================
+/*
+public class Test{
+public static void main(String[]args){
+	String []arr = {"1st","2nd","3rd","4th","5th"};
+	String place = "faraway";
+	System.out.println(arr[place.indexOf("a",3)]);
+	 } 
+}
+*/
+//============================================================================
 
 
 
