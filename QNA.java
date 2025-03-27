@@ -788,10 +788,146 @@ public static void main(String[]args){
 	String []arr = {"1st","2nd","3rd","4th","5th"};
 	String place = "faraway";
 	System.out.println(arr[place.indexOf("a",3)]);
-	 } 
-}
+	 } }
 */
-//============================================================================
+//=========================================================================
+/*
+class SpecialString{
+	String str;
+	SpecialString(String str){
+		this.str=str;
+	}
+}
+public class QNA{
+public static void main(String[]args) {
+Object [] arr=new Object[4];
+for(int i=1; i<=3; i++) {
+	switch(i){
+		case 1:
+			arr[i]=new String("Java");
+			break;
+		case 2:
+			arr[i]=new StringBuilder("Java");
+			break;
+		case 3:
+			arr[i]=new SpecialString("Java");
+			break;
+	}}
+for (Object obj:arr) {
+	System.out.println(obj);
+	}}}
+*/
+//=============================================================================
+/*
+public class QNA {
+    public static void main(String[] args) {
+        String str = "  Ineuron\tTechnology\tPrivateltd\tKnow\tfor\tjava  ".strip();
+        //str = str.replaceAll("[\\t\\s]+", " ");  // Replaces tabs and spaces with a single space
+        System.out.println(str);
+    }}
+*/
+//===============================================================================
+/*
+public class QNA {
+    public static void main(String[] args) {
+String s1=" ";
+System.out.println(s1.isBlank());
+System.out.println(s1.isEmpty());
+    }}
+*/
+//================================================================================
+/*
+public class QNA {
+    public static void main(String[] args) {
+String s1=new String("JAVA");
+String s2=new String("JAVA");
+System.out.println(s1==s2);
+System.out.println(s1.equals(s2));
+System.out.println(s1==s2.intern());
+System.out.println(s1.intern()==s2.intern());
+System.out.println(s1.intern()==s2);
+}}
+ */
+//================================================================================
+/*
+ public class QNA {
+    public static void main(String[] args) {
+String opt="True";
+switch(opt) {
+case "True":
+	System.out.print("True");
+	break;
+	default:
+		System.out.println("****");
+}
+System.out.println("Done");
+}}
+*/
+//===============================================================================
+/*
+public class QNA {
+public static void main(String[] args) {
+int x=5;
+while(isAvailable(x)){
+	System.out.print(x--);
+}}
+public static boolean isAvailable(int x) {
+	return x-->0?true:false;
+}}
+*/
+//=============================================================================
+/*
+public class QNA {
+public static void main(String[] args) {
+	StringBuilder sb=new StringBuilder(5);
+	String s="";
+	if(sb.equals(s)) {
+		System.out.println("Match 1");
+	}else if(sb.toString().equals(s.toString())) {
+		System.out.println("Match 2");
+	}else {
+		System.out.println("Match 3");
+	}}}
+*/
+//===============================================================================
+/*
+public class QNA {
+public static void main(String[] args) {
+	StringBuilder sb=new StringBuilder("Java");
+	String s1=sb.toString();
+	String s2="Java";
+	System.out.println(s1==s2);
+}}
+*/
+//===============================================================================
+/*
+public class QNA {
+public static void main(String[] args) {
+	StringBuilder sb=new StringBuilder("Java");
+	String s1=sb.toString();
+	String s2=sb.toString();
+	System.out.println(s1==s2);
+}}
+*/
+//================================================================================
+/*
+public class QNA {
+public static void main(String[] args) {
+	String str="Java";
+	StringBuilder sb=new StringBuilder("Java");
+	System.out.println(str.equals(sb)+":"+sb.equals(str));
+}}
+*/
+//=================================================================================
+/*
+public class QNA {
+public static void main(String[] args) {
+	StringBuilder sb=new StringBuilder();
+	//System.out.println(sb.append(null).length());   //wrong
+	System.out.println(sb.append("null").length()); //correct
+}}
+*/
+//=================================================================================
 
 
 
