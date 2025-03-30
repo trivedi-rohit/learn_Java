@@ -928,7 +928,225 @@ public static void main(String[] args) {
 }}
 */
 //=================================================================================
-
+/*
+public class QNA {
+public static void main(String[] args) {
+	StringBuilder sb=new StringBuilder();
+	System.out.println(sb.append("").append("").append("").length()); //correct
+}}
+*/
+//==================================================================================
+/*
+public class QNA {
+public static void main(String[] args) {
+	StringBuilder sb=new StringBuilder(5);
+	sb.append("0123456789");
+	System.out.println(sb); 
+	sb.delete(8,1000);
+	System.out.println(sb); 
+}}
+*/
+//===================================================================================
+/*
+public class QNA {
+public static void main(String[] args) {
+	StringBuilder sb=new StringBuilder("0123456789");
+	System.out.println(sb.delete(3,6).deleteCharAt(4).deleteCharAt(5));
+}}
+*/
+//===================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		final String fname = "James";
+		String lname = "Gosling";
+		String name1=fname+lname;
+		String name2=fname+"Gosling";
+		String name3="James"+"Gosling";
+		System.out.println(name1==name2);
+		System.out.println(name2==name3);
+	}
+}
+*/
+//======================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		m1(null);
+	}
+	static void m1(CharSequence s) {
+		System.out.println("CharSequence");
+	}
+	static void m1(Object s) {
+		System.out.println("Object");
+	}
+}
+*/
+/*
+ * options:
+ * 1) Compilation Error   
+ * 2) CharSequence   
+ * 3) String
+ * 4) Object
+ */
+//=======================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		StringBuilder sb=new StringBuilder("SpaceStation");
+		sb.delete(5,6).insert(5," S").toString().toUpperCase();
+		//String st=sb.delete(5,6).insert(5," S").toString().toUpperCase();
+		System.out.println(sb);
+		//System.out.println(st);
+}}
+*/
+//=========================================================================================
+/* 
+public class QNA{
+	public static void main(String[] args) {
+		String s1="SCP";
+		String s2="scp";
+		System.out.println(s1.equals(s2.toUpperCase()));
+		System.out.println(s1.equals(s2));
+		//System.out.println(s1.equals(s2.toUpper()));
+		//System.out.println(s1.equals(s2.toLower()));
+		System.out.println(s1.length()==s2.length());
+		System.out.println(s1.equalsIgnoreCase(s2));
+		System.out.println(s1.contentEquals(s2));
+	}
+}
+/*
+ * String s1 = new String("hello");
+ * String s2 = new String("hello");
+ * System.out.println(s1.equals(s2));  // Output: true; because the content of both strings is the same.
+ * System.out.println(s1 == s2);  // Output: false
+// O/P is false, because s1 and s2 refer to two different objects in memory, even though their contents are the same.
+ 
+ *String s1 = "hello";
+ *String s2 = "hello";
+ *System.out.println(s1 == s2);  // Output: true
+//s1 == s2 returns true because both s1 and s2 point to the same reference in the string pool.
+ *System.out.println(s1.equals(s2));  // Output: true
+*/
+//=========================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		String s1="ONE";
+		System.out.println(s1.concat(s1.concat("ELEVEN ")).trim());
+		;
+	}}
+*/
+//==========================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		String str="PANIC";
+		StringBuilder sb=new StringBuilder("THET");
+		System.out.println(str.replace("N",sb));
+	}}
+*/
+//==========================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		boolean flag1 = "Java" == "Java".replace('J', 'J'); //Line n1
+		boolean flag2 = "Java" == "Java".replace("J", "J"); //Line n2
+		System.out.println(flag1 && flag2);
+	}}
+*/
+//==========================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		String place = "MISSS";
+		System.out.println(place.replace("SS", "T"));
+	}}
+*/
+//===========================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		String str = "ALASKA";
+		System.out.println(str.charAt(str.indexOf("A") + 1));
+	}}
+*/
+//============================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		String word="REBUS";
+		word=word.substring(2); 
+		//word=word.substring(2,4);//BU
+		word=word.substring(2, 5);
+		word=word.replace("RE","");
+		//word=word.substring(2,6); //String Index Out Of Bound Exception
+		//word=word.delete(0,2); //CE
+		System.out.println(word);
+	}}
+*/
+//============================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		String str="Game on";
+		StringBuilder sb=new StringBuilder(str);
+		System.out.println(str.contentEquals(sb));
+      //System.out.println(sb.contentEquals(str));
+		System.out.println(sb.equals(str));
+		System.out.println(str.equals(sb));
+	}} 
+*/
+//============================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		StringBuilder sb = new StringBuilder("TOMATO");
+		//System.out.println(sb.reverse().replace("O", "A"));  //CE
+		System.out.println(sb.reverse().replace(2,5, "P"));	
+	}}
+*/
+//============================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		String str = "trivedi Technolog Private Limited";
+		System.out.println(str.indexOf('i',5));  //6
+	  //System.out.println(str.charAt(str.length())); //IndexOutOfBoundsException
+		System.out.println(str.charAt(str.length()-1));  //d
+	}}
+		 
+/*
+ string indices are 0-based, meaning the valid index range is from 0 to str.length() - 1. 
+ So, attempting to access str.charAt(str.length()) will result in an IndexOutOfBoundsException.
+ */
+//==============================================================================================
+/* 
+public class QNA{
+	public static void main(String[] args) {
+		StringBuilder sb = new StringBuilder(-4);	
+		sb.append("ABC");
+		System.out.println(sb);  //RE
+	}}
+ */
+//==============================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		String str = null;
+		System.out.println(str.isBlank());  //NullPointerException
+	}}
+*/
+//==============================================================================================
+/*
+public class QNA{
+	public static void main(String[] args) {
+		String[] strings = "iNeuron_Technology_privatelimited_Known_For_Java".split("_",3);
+				for (String string : strings)
+				System.out.println(string);
+	}}
+*/
+//===============================================================================================
 
 
 
