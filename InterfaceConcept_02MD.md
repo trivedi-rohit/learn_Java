@@ -47,6 +47,7 @@ a. Reuseability:=> extends
     	   }
 
 //==================================================================================
+
 3) An interface can extends any number of interfaces at a time.
 	  
     interface IDemo1
