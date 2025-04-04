@@ -18,6 +18,7 @@ eg::
     	   }
 
 ================================================================================
+
 2) A Class can extends a class and can implement any number of interface simultaneously.
 a. Reuseability:=> extends
 	b. implementation:=> interface
