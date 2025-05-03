@@ -1147,7 +1147,7 @@ public class QNA{
 	}}
 */
 //===============================================================================================
-
+/*
 // Wrapper classes and string class are immutable (changes will not be made in same copy, but in different copy)
 // StringBuilder and StringBuffer are mutable (changes will be made on the same object )
 public class QNA{
@@ -1160,7 +1160,33 @@ public class QNA{
 		sb1.append("5");     //  sb1,sb2="1235"
 		System.out.println((x==y)+" : "+(sb1==sb2));
 }}
+*/
 //================================================================================================
+class Payload {
+private int weight;
+public Payload (int w) { weight = w; }
+public void setWeight(int w) { weight = w; }
+public String toString() { return Integer.toString(weight); }
+}
+public class QNA {
+static void changePayload(Payload p) {
+/* insert code */ //Line 12
+}
+public static void main(String[] args) {
+Payload p = new Payload(200);// weight = 200
+p.setWeight(1024);//weight = 1024
+changePayload(p);
+System.out.println("p is " + p);
+}
+}
+//Which code fragment, inserted at the end of line 12, produces the output p is 420?
+//A. p.setWeight(420);
+//B. p.changePayload(420);
+//C. p = new Payload(420);
+//D. Payload.setWeight(420);
+//E. p = Payload.setWeight(420);
+// Answer : A
+//=================================================================================================
 
 
 
